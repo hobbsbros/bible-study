@@ -1,0 +1,139 @@
+body {
+    background-color: #ebd5b3;
+    font-size: 24px;
+    font-family: 'EB Garamond', serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.reading {
+    height: auto;
+    display: flex;
+    margin: 20px;
+}
+
+.title {
+    font-size: 72px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 60px;
+    color: #0c1461;
+}
+
+.reading .title {
+    font-size: 48px;
+    color: black;
+}
+
+.chapter {
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    line-height: 48px;
+}
+
+.verses {
+    background-color: #f0e6d7;
+    float: left;
+    width: 70%;
+    box-shadow: 0px 0px 10px #dadada;
+    transition: 0.8s;
+    border-radius: 25px;
+    padding: 25px;
+    border: none;
+    margin-right: 12px;
+}
+
+.verses:hover {
+    box-shadow: 0px 0px 10px #a0a0a0;
+    transition: 0.8s;
+}
+
+.verse {
+    margin-bottom: 22px;
+}
+
+.discussion {
+    box-shadow: 0px 0px 10px #dadada;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 25px;
+    border: none;
+    background-color: #f0e6d7;
+    transition: 0.8s;
+}
+
+.discussion:hover {
+    box-shadow: 0px 0px 10px #a0a0a0;
+    transition: 0.8s;
+}
+
+.notes {
+    background-color: #f0e6d7;
+    float: right;
+    line-height: 40px;
+    width: 30%;
+    box-shadow: 0px 0px 10px #dadada;
+    transition: 0.8s;
+    border-radius: 25px;
+    padding: 25px;
+    border: none;
+    margin-left: 12px;
+}
+
+.notes:hover {
+    box-shadow: 0px 0px 10px #a0a0a0;
+    transition: 0.8s;
+}
+
+.notes .official {
+    color: black;
+}
+
+.notes .unofficial {
+    color: #0c1461;
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 40px;
+    }
+
+    .reading .title {
+        font-size: 30px;
+    }
+
+    .reading {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .chapter {
+        font-size: 24px;
+    }
+
+    .verses {
+        margin: 0px;
+        width: auto;
+    }
+
+    .notes {
+        line-height: 40px;
+        margin: 0px;
+        margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }    
+}
