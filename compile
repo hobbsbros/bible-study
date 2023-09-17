@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
 for filename in ./*.bible; do
-    python ../compile.py filename
+    python3 ../compile.py "$filename"
+done
