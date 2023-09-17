@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
-for filename in ./*.bible; do
+for filename in *.bible; do
+    echo "$filename"
     python3 ../compile.py "$filename"
 done
